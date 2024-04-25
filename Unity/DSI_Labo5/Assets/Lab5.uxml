@@ -1,0 +1,17 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/Selector.uss?fileID=7433441132597879392&amp;guid=bd7df284abc16a842a5f20c41106ca25&amp;type=3#Selector" />
+    <ui:VisualElement name="Selector" class="Selector">
+        <ui:VisualElement name="SelectedChar" class="FichaChar">
+            <ui:VisualElement name="Image"/>
+            <ui:VisualElement name="Data">
+                <ui:Label text="Pepito" name="Name" class="Data" />
+                <ui:Label text="Perez" name="Apellido" class="Data" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="Input">
+            <ui:TextField label="Nombre" value="filler text" text="Pepito" name="Nombre" class="Input" />
+            <ui:TextField label="Apellido" value="filler text" text="Perez" name="Apellido" class="Input" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="Chars" style="flex-direction: column; flex-wrap: nowrap; align-items: auto; justify-content: space-between; height: auto; flex-grow: 5;" />
+</ui:UXML>

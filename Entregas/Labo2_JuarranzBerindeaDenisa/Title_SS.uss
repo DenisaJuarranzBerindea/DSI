@@ -1,0 +1,60 @@
+.TitleStyleSheet {
+    min-width: auto;
+    min-height: auto;
+    align-items: stretch;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    flex-shrink: 2;
+    flex-direction: row;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.CharactersTitleStyleSheet {
+    left: auto;
+    top: auto;
+    flex-direction: row;
+    align-items: auto;
+    width: auto;
+    height: auto;
+    padding-left: 0;
+    padding-right: 125px;
+    padding-top: 0;
+    padding-bottom: 0;
+    flex-shrink: 1;
+    justify-content: flex-start;
+    flex-basis: auto;
+    margin-left: 40px;
+    margin-right: 40px;
+    flex-wrap: nowrap;
+    -unity-font-definition: none;
+    -unity-font: url('project://database/Assets/Fonts/Font/The%20Centurion%20.ttf?fileID=12800000&guid=17ca13ac7531fd748bd90649cea0261e&type=3#The Centurion ');
+    font-size: 35px;
+}
+
+.WeaponTitleStyleSheet {
+    align-items: auto;
+    left: auto;
+    top: auto;
+    flex-direction: row;
+    width: auto;
+    height: auto;
+    padding-left: 125px;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    flex-shrink: 1;
+    margin-left: 40px;
+    margin-right: 40px;
+    -unity-text-align: middle-center;
+    white-space: nowrap;
+    -unity-font-definition: none;
+    -unity-font: url('project://database/Assets/Fonts/Font/The%20Centurion%20.ttf?fileID=12800000&guid=17ca13ac7531fd748bd90649cea0261e&type=3#The Centurion ');
+    font-size: 35px;
+}

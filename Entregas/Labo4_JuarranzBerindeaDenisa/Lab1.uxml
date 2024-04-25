@@ -1,0 +1,21 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/Title_SS.uss?fileID=7433441132597879392&amp;guid=75817f67f1e3c8b46a76f2d5d6b3415c&amp;type=3#Title_SS" />
+    <Style src="project://database/Assets/Body_SS.uss?fileID=7433441132597879392&amp;guid=c6d6b70744b64d64d88ac84f95a7bbc2&amp;type=3#Body_SS" />
+    <ui:VisualElement name="Title" class="TitleStyleSheet">
+        <ui:Label text="Choose your character" display-tooltip-when-elided="true" name="CharactersTitle" class="CharactersTitleStyleSheet" />
+        <ui:Label text="Choose your weapon" display-tooltip-when-elided="true" name="WeaponsTitle" class="WeaponTitleStyleSheet" />
+    </ui:VisualElement>
+    <ui:VisualElement name="Body" class="BodyStyleSheet">
+        <ui:VisualElement name="LeftSelector" style="flex-grow: 1;">
+            <ui:VisualElement name="LeftSelector" class="SelectorStyle">
+                <ui:Button display-tooltip-when-elided="true" name="Char1" class="OptionStyle" style="background-image: url(&apos;project://database/Assets/Images/Char1.png?fileID=2800000&amp;guid=d6107c92b59d6774ebd4e74653e36244&amp;type=3#Char1&apos;);" />
+                <ui:Button display-tooltip-when-elided="true" name="Char2" class="OptionStyle" style="background-image: url(&apos;project://database/Assets/Images/Char2.png?fileID=2800000&amp;guid=54c7ac244f3f8654e954438c81d02c87&amp;type=3#Char2&apos;);" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="Visualization" class="VisualizationStyle" />
+        <ui:VisualElement name="RightSelector" class="SelectorStyle">
+            <ui:Button display-tooltip-when-elided="true" name="Weapon1" class="OptionStyle" style="background-image: url(&apos;project://database/Assets/Images/Weapon1.png?fileID=2800000&amp;guid=eb986acb4db7cf34787dbce37b7dbb80&amp;type=3#Weapon1&apos;);" />
+            <ui:Button display-tooltip-when-elided="true" name="Weapon2" class="OptionStyle" style="background-image: url(&apos;project://database/Assets/Images/Weapon2.png?fileID=2800000&amp;guid=fdeb2f818e1a3e24290f2c2f38ab7dea&amp;type=3#Weapon2&apos;);" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
