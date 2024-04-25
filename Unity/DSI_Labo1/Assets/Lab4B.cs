@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -7,39 +8,11 @@ using UnityEngine.UIElements;
 
 public class Lab4B : VisualElement
 {
-    public new class UxmlFactory : UxmlFactory<Lab4B> { };
-
-    public Lab4B()
-    {
-        VisualElement star1 = new VisualElement();
-        VisualElement star2 = new VisualElement();
-        VisualElement star3 = new VisualElement();
-        VisualElement star4 = new VisualElement();
-        VisualElement star5 = new VisualElement();
-
-        styleSheets.Add(Resources.Load<StyleSheet>("StarsGroupStyle"));
-
-        star1.AddToClassList("StarStyle");
-        star2.AddToClassList("StarStyle");
-        star3.AddToClassList("StarStyle");
-        star4.AddToClassList("StarStyle");
-        star5.AddToClassList("StarStyle");
-
-        hierarchy.Add(star1);
-        hierarchy.Add(star2);
-        hierarchy.Add(star3);
-        hierarchy.Add(star4);
-        hierarchy.Add(star5);
-    }
-
-
     VisualElement star1 = new VisualElement();
-    VisualElement star2 = new VisualElement();
+    VisualElement star2 = new VisualElement();  
     VisualElement star3 = new VisualElement();
-    VisualElement star4 = new VisualElement();
-    VisualElement star5 = new VisualElement();
 
-    [SerializeField] int starsActive = 0;
+    int starsActive = 0;
 
     public int Estado
     {
@@ -53,56 +26,46 @@ public class Lab4B : VisualElement
 
     public void PonerEstrellas()
     {
-        if (starsActive == 0)
+        star1.style.backgroundColor = new Color(0f, 0f, 0f, 0f);
+        star2.style.backgroundColor = new Color(0f, 0f, 0f, 0f);
+        star3.style.backgroundColor = new Color(0f, 0f, 0f, 0f);
+
+        if (starsActive == 1)
         {
-            star1.visible = false;
-            star2.visible = false;
-            star3.visible = false;
-            star4.visible = false;
-            star5.visible = false;
-        }
-        else if (starsActive == 1)
-        {
-            star1.visible = true;
-            star2.visible = false;
-            star3.visible = false;
-            star4.visible = false;
-            star5.visible = false;
+            star1.style.backgroundColor = Color.red;
         }
         else if (starsActive == 2)
         {
-            star1.visible = true;
-            star2.visible = true;
-            star3.visible = false;
-            star4.visible = false;
-            star5.visible = false;
+            star1.style.backgroundColor = Color.red;
+            star2.style.backgroundColor = Color.red;
         }
         else if (starsActive == 3)
         {
-            star1.visible = true;
-            star2.visible = true;
-            star3.visible = true;
-            star4.visible = false;
-            star5.visible = false;
+            star1.style.backgroundColor = Color.red;
+            star2.style.backgroundColor = Color.red;
+            star3.style.backgroundColor = Color.red;
         }
-        else if (starsActive == 4)
-        {
-            star1.visible = true;
-            star2.visible = true;
-            star3.visible = true;
-            star4.visible = true;
-            star5.visible = false;
-        }
-        else if (starsActive == 5)
-        {
-            star1.visible = true;
-            star2.visible = true;
-            star3.visible = true;
-            star4.visible = true;
-            star5.visible = true;
-        }
+
+       
     }
 
+    public Lab4B()
+    {
+        star1.style.backgroundColor = new Color(0f, 0f, 0f, 0f);
+        star2.style.backgroundColor = new Color(0f, 0f, 0f, 0f);
+        star3.style.backgroundColor = new Color(0f, 0f, 0f, 0f);
 
+        styleSheets.Add(Resources.Load<StyleSheet>("Lab4B"));
 
+        star1.AddToClassList("stars");
+        star2.AddToClassList("stars");
+        star3.AddToClassList("stars");
+
+        hierarchy.Add(star1);
+        hierarchy.Add(star2);
+        hierarchy.Add(star3);
+    }
 }
+    
+
+    

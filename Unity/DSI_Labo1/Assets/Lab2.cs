@@ -15,7 +15,7 @@ public class Lab2 : MonoBehaviour
         //Creamos una lista con los objetos de los dos selectores
         VisualElement characters = rootve.Query("LeftSelector");
         VisualElement weapons = rootve.Query("RightSelector");
-        List<VisualElement> lista_ve = new();
+        List<VisualElement> lista_ve = new List<VisualElement>();
 
         lista_ve.AddRange(characters.Children().ToList());
         lista_ve.AddRange(weapons.Children().ToList());

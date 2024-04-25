@@ -65,32 +65,6 @@
     flex-wrap: nowrap;
 }
 
-.OptionStyle:hover {
-    position: relative;
-    justify-content: center;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    align-items: center;
-    flex-grow: 1;
-    flex-shrink: 0;
-    background-color: rgba(0, 0, 0, 0);
-    border-left-color: rgba(0, 0, 0, 0);
-    border-right-color: rgba(0, 0, 0, 0);
-    border-top-color: rgba(0, 0, 0, 0);
-    border-bottom-color: rgba(0, 0, 0, 0);
-    flex-basis: auto;
-    width: 10px;
-    height: 10px;
-    flex-wrap: nowrap;
-    -unity-background-image-tint-color: rgb(255, 0, 0);
-}
-
 .StarStyle {
     flex-direction: row;
     flex-grow: 0;
@@ -119,5 +93,49 @@
     align-items: center;
     justify-content: space-around;
     height: auto;
+    flex-grow: 0;
+}
+
+.OptionStyle:hover {
+    position: relative;
+    justify-content: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    align-items: center;
+    flex-grow: 1;
+    flex-shrink: 0;
+    background-color: rgba(0, 0, 0, 0);
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    flex-basis: auto;
+    width: 10px;
+    height: 10px;
+    flex-wrap: nowrap;
+    -unity-background-image-tint-color: rgb(255, 0, 0);
+}
+
+.star {
+    flex-grow: 5;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.starGroup {
+    flex-direction: row;
+    align-items: stretch;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     flex-grow: 0;
 }

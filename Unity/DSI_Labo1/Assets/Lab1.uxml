@@ -6,24 +6,21 @@
         <ui:Label text="Choose your weapon" display-tooltip-when-elided="true" name="WeaponsTitle" class="WeaponTitleStyleSheet" />
     </ui:VisualElement>
     <ui:VisualElement name="Body" class="BodyStyleSheet">
-        <ui:VisualElement name="LeftSelector" focusable="false" style="flex-grow: 1;">
+        <ui:VisualElement name="LeftSelector" style="flex-grow: 1;">
+            <Style src="project://database/Assets/Body_SS.uss?fileID=7433441132597879392&amp;guid=c6d6b70744b64d64d88ac84f95a7bbc2&amp;type=3#Body_SS" />
             <ui:VisualElement name="LeftSelector" class="SelectorStyle">
-                <ui:Button display-tooltip-when-elided="true" name="Char1" class="OptionStyle" style="background-image: url(&apos;project://database/Assets/Images/Char1.png?fileID=2800000&amp;guid=d6107c92b59d6774ebd4e74653e36244&amp;type=3#Char1&apos;);" />
-                <ui:VisualElement name="Stars" class="StarsGroupStyle">
-                    <ui:VisualElement name="Star" class="StarStyle" />
-                    <ui:VisualElement name="Star" class="StarStyle" />
-                    <ui:VisualElement name="Star" class="StarStyle" />
-                    <ui:VisualElement name="Star" class="StarStyle" />
-                    <ui:VisualElement name="Star" class="StarStyle" />
-                </ui:VisualElement>
-                <ui:Button display-tooltip-when-elided="true" name="Char2" class="OptionStyle" style="background-image: url(&apos;project://database/Assets/Images/Char2.png?fileID=2800000&amp;guid=54c7ac244f3f8654e954438c81d02c87&amp;type=3#Char2&apos;);" />
-                <ui:VisualElement name="Stars" class="StarsGroupStyle">
-                    <ui:VisualElement name="Star" class="StarStyle" />
-                    <ui:VisualElement name="Star" class="StarStyle" />
-                    <ui:VisualElement name="Star" class="StarStyle" />
-                    <ui:VisualElement name="Star" class="StarStyle" />
-                    <ui:VisualElement name="Star" class="StarStyle" />
-                </ui:VisualElement>
+                <ui:Button display-tooltip-when-elided="true" name="Char1" class="OptionStyle SelectorStyle" style="background-image: url(&apos;project://database/Assets/Images/Char1.png?fileID=2800000&amp;guid=d6107c92b59d6774ebd4e74653e36244&amp;type=3#Char1&apos;);" />
+                <Lab4B name="Lab4B" stars="3" class="StarsGroupStyle" style="flex-grow: 0;">
+                    <ui:VisualElement name="Star1" class="StarStyle" />
+                    <ui:VisualElement name="Star2" class="StarStyle" />
+                    <ui:VisualElement name="Star3" class="StarStyle" />
+                </Lab4B>
+                <ui:Button display-tooltip-when-elided="true" name="Char2" class="OptionStyle SelectorStyle" style="background-image: url(&apos;project://database/Assets/Images/Char2.png?fileID=2800000&amp;guid=54c7ac244f3f8654e954438c81d02c87&amp;type=3#Char2&apos;);" />
+                <Lab4B name="Lab4B" stars="1" class="StarsGroupStyle" style="flex-grow: 1;">
+                    <ui:VisualElement name="Star1" class="StarStyle" />
+                    <ui:VisualElement name="Star2" class="StarStyle" />
+                    <ui:VisualElement name="Star3" class="StarStyle" />
+                </Lab4B>
             </ui:VisualElement>
         </ui:VisualElement>
         <ui:VisualElement name="Visualization" class="VisualizationStyle" />
