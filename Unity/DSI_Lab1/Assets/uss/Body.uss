@@ -1,0 +1,49 @@
+.Body {
+    flex-direction: row;
+    flex-grow: 8;
+    background-color: rgb(255, 220, 135);
+}
+
+.Selector {
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: stretch;
+    border-left-width: 20px;
+    border-right-width: 20px;
+    border-top-width: 20px;
+    border-bottom-width: 20px;
+}
+
+.Option {
+    flex-grow: 1;
+    border-left-width: 2px;
+    border-right-width: 2px;
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+}
+
+.OptionBg {
+    flex-grow: 1;
+    flex-direction: row;
+    background-color: rgba(255, 50, 50, 0.6);
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.Icon {
+    flex-grow: 1;
+}
+
+.Info {
+    flex-grow: 1;
+}
+
+.Name {
+    flex-grow: 1;
+}
+
+.Stars {
+    flex-grow: 1;
+}
