@@ -32,6 +32,7 @@
 }
 
 .Icon {
+     -unity-background-scale-mode: scale-to-fit;
     flex-grow: 1;
 }
 
@@ -41,6 +42,9 @@
 
 .Name {
     flex-grow: 1;
+    font-size: 20px;
+    -unity-text-align: middle-center;
+    -unity-font-style: bold;
 }
 
 .Stars {
