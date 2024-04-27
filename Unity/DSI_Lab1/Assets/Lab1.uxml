@@ -5,7 +5,7 @@
         <ui:VisualElement name="Characters" class="Selector">
             <ui:VisualElement name="Char" class="Option">
                 <ui:VisualElement name="Mario" class="OptionBg" style="background-color: rgba(255, 50, 50, 0.6);">
-                    <ui:VisualElement name="Icon" style="flex-grow: 1; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0;" />
+                    <ui:VisualElement name="Icon" class="Icon" />
                     <ui:VisualElement name="Info" style="flex-grow: 1;">
                         <ui:VisualElement name="Name" style="flex-grow: 1;" />
                         <ui:VisualElement name="Stars" style="flex-grow: 1;" />
@@ -14,7 +14,7 @@
             </ui:VisualElement>
             <ui:VisualElement name="Char" class="Option">
                 <ui:VisualElement name="Luigi" class="OptionBg" style="background-color: rgba(50, 255, 90, 0.6);">
-                    <ui:VisualElement name="Icon" style="flex-grow: 1; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0;" />
+                    <ui:VisualElement name="Icon" class="Icon"  />
                     <ui:VisualElement name="Info" style="flex-grow: 1;">
                         <ui:VisualElement name="Name" style="flex-grow: 1;" />
                         <ui:VisualElement name="Stars" style="flex-grow: 1;" />
@@ -23,7 +23,7 @@
             </ui:VisualElement>
             <ui:VisualElement name="Char" class="Option">
                 <ui:VisualElement name="Peach" class="OptionBg" style="background-color: rgba(255, 30, 150, 0.6);">
-                    <ui:VisualElement name="Icon" style="flex-grow: 1; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0;" />
+                    <ui:VisualElement name="Icon" class="Icon" />
                     <ui:VisualElement name="Info" style="flex-grow: 1;">
                         <ui:VisualElement name="Name" style="flex-grow: 1;" />
                         <ui:VisualElement name="Stars" style="flex-grow: 1;" />
@@ -32,7 +32,7 @@
             </ui:VisualElement>
             <ui:VisualElement name="Char" class="Option">
                 <ui:VisualElement name="Estela" class="OptionBg" style="background-color: rgba(50, 255, 235, 0.6);">
-                    <ui:VisualElement name="Icon" style="flex-grow: 1; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0;" />
+                    <ui:VisualElement name="Icon" class="Icon" />
                     <ui:VisualElement name="Info" style="flex-grow: 1;">
                         <ui:VisualElement name="Name" style="flex-grow: 1;" />
                         <ui:VisualElement name="Stars" style="flex-grow: 1;" />
@@ -43,7 +43,7 @@
         <ui:VisualElement name="Vehicles" class="Selector">
             <ui:VisualElement name="Kart" class="Option">
                 <ui:VisualElement name="NormalKart" class="OptionBg" style="background-color: rgba(220, 165, 185, 0.6);">
-                    <ui:VisualElement name="Icon" style="flex-grow: 1;" />
+                    <ui:VisualElement name="Icon" class="Icon" />
                     <ui:VisualElement name="Info" style="flex-grow: 1;">
                         <ui:VisualElement name="Name" style="flex-grow: 1;" />
                         <ui:VisualElement name="Stars" style="flex-grow: 1;" />
@@ -52,7 +52,7 @@
             </ui:VisualElement>
             <ui:VisualElement name="Kart" class="Option">
                 <ui:VisualElement name="SpecialKart" class="OptionBg" style="background-color: rgba(100, 165, 215, 0.6);">
-                    <ui:VisualElement name="Icon" style="flex-grow: 1;" />
+                    <ui:VisualElement name="Icon" class="Icon" />
                     <ui:VisualElement name="Info" style="flex-grow: 1;">
                         <ui:VisualElement name="Name" style="flex-grow: 1;" />
                         <ui:VisualElement name="Stars" style="flex-grow: 1;" />
@@ -61,7 +61,7 @@
             </ui:VisualElement>
             <ui:VisualElement name="Kart" class="Option">
                 <ui:VisualElement name="NormalBike" class="OptionBg" style="background-color: rgba(220, 115, 50, 0.6);">
-                    <ui:VisualElement name="Icon" style="flex-grow: 1;" />
+                    <ui:VisualElement name="Icon" class="Icon" />
                     <ui:VisualElement name="Info" style="flex-grow: 1;">
                         <ui:VisualElement name="Name" style="flex-grow: 1;" />
                         <ui:VisualElement name="Stars" style="flex-grow: 1;" />
@@ -70,7 +70,7 @@
             </ui:VisualElement>
             <ui:VisualElement name="Kart" class="Option">
                 <ui:VisualElement name="SpecialBike" class="OptionBg" style="background-color: rgba(55, 40, 200, 0.6);">
-                    <ui:VisualElement name="Icon" style="flex-grow: 1;" />
+                    <ui:VisualElement name="Icon" class="Icon"  />
                     <ui:VisualElement name="Info" style="flex-grow: 1;">
                         <ui:VisualElement name="Name" style="flex-grow: 1;" />
                         <ui:VisualElement name="Stars" style="flex-grow: 1;" />
@@ -79,10 +79,10 @@
             </ui:VisualElement>
         </ui:VisualElement>
     </ui:VisualElement>
-    <ui:VisualElement name="Footer" style="flex-grow: 1; background-color: rgb(255, 220, 135); flex-direction: row;">
-        <ui:VisualElement name="Empty" style="flex-grow: 7;" />
-        <ui:VisualElement name="Next" style="flex-grow: 1; flex-direction: row; align-items: stretch; justify-content: flex-end; background-color: rgba(0, 0, 0, 0); border-top-left-radius: 0; border-bottom-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; border-left-width: 2px; border-right-width: 2px; border-top-width: 2px; border-bottom-width: 2px;">
-            <ui:Button text="Next" display-tooltip-when-elided="true" name="Button" style="flex-grow: 1; background-color: rgb(255, 255, 255); border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-left-width: 5px; border-right-width: 5px; border-top-width: 5px; border-bottom-width: 5px; border-top-left-radius: 30px; border-bottom-left-radius: 30px; border-top-right-radius: 30px; border-bottom-right-radius: 30px; color: rgb(0, 0, 0); font-size: 20px; -unity-font-style: bold;" />
+    <ui:VisualElement name="Footer" class="Footer">
+        <ui:VisualElement name="Empty" class="Empty" />
+        <ui:VisualElement name="Next" class="Next">
+            <ui:Button text="Next" display-tooltip-when-elided="true" name="Button" class="Button" />
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>
