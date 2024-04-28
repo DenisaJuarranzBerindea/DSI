@@ -1,0 +1,36 @@
+.Footer {
+    flex-grow: 1;
+    background-color: rgb(255, 220, 135);
+    flex-direction: row;
+}
+
+.Empty {
+    flex-grow: 7;
+}
+
+.Next {
+    flex-grow: 1;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: flex-end;
+    border-left-width: 2px;
+    border-right-width: 2px;
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+}
+
+.Button {
+    flex-grow: 1;
+    background-color: rgb(255, 255, 255);
+    border-left-width: 5px;
+    border-right-width: 5px;
+    border-top-width: 5px;
+    border-bottom-width: 5px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    -unity-font-style: bold;
+}
