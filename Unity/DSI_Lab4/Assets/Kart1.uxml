@@ -1,0 +1,18 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/Lab4.uss?fileID=7433441132597879392&amp;guid=7e5c4bf3cbcce3a498be55c547c2443a&amp;type=3#Lab4" />
+    <ui:VisualElement name="Kart" class="Option">
+        <ui:VisualElement name="SpecialKart" class="OptionBg" style="background-color: rgba(100, 165, 215, 0.6);">
+            <ui:VisualElement name="Icon" class="Icon" style="background-image: url(&apos;project://database/Assets/Sprites/KartS.png?fileID=2800000&amp;guid=997fca0abdc3c9749a02b489dd5b3343&amp;type=3#KartS&apos;);" />
+            <ui:VisualElement name="Info" class="Info">
+                <ui:Label text="SPECIAL KART" display-tooltip-when-elided="true" name="NameSKart" class="Name" style="color: rgb(255, 255, 255);" />
+                <ui:VisualElement name="Stars" class="Stars">
+                    <ui:VisualElement name="Star" class="Star" style="background-image: url(&apos;project://database/Assets/Sprites/Star.png?fileID=2800000&amp;guid=615067cdf57253a47b8af256d77588b9&amp;type=3#Star&apos;);" />
+                    <ui:VisualElement name="Star" class="Star" style="background-image: url(&apos;project://database/Assets/Sprites/Star.png?fileID=2800000&amp;guid=615067cdf57253a47b8af256d77588b9&amp;type=3#Star&apos;);" />
+                    <ui:VisualElement name="Star" class="Star" style="background-image: url(&apos;project://database/Assets/Sprites/Star.png?fileID=2800000&amp;guid=615067cdf57253a47b8af256d77588b9&amp;type=3#Star&apos;);" />
+                    <ui:VisualElement name="Star" class="Star" style="background-image: url(&apos;project://database/Assets/Sprites/Star.png?fileID=2800000&amp;guid=615067cdf57253a47b8af256d77588b9&amp;type=3#Star&apos;);" />
+                    <ui:VisualElement name="Star" class="Star" style="background-image: url(&apos;project://database/Assets/Sprites/Star.png?fileID=2800000&amp;guid=615067cdf57253a47b8af256d77588b9&amp;type=3#Star&apos;);" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
