@@ -5,6 +5,8 @@ using UnityEngine.UIElements;
 
 public class Lab3Manipulator : MouseManipulator
 {
+    protected bool m_Active;
+
     public Lab3Manipulator()
     {
         activators.Add(new ManipulatorActivationFilter { button = MouseButton.RightMouse });
@@ -12,20 +14,18 @@ public class Lab3Manipulator : MouseManipulator
 
     protected override void RegisterCallbacksOnTarget()
     {
-        target.RegisterCallback<MouseDownEvent>(OnMouseDown);
-        target.RegisterCallback<MouseUpEvent>(OnMouseUp);
+        target.RegisterCallback<MouseMoveEvent>(OnMouseMove);
+        target.RegisterCallback<MouseLeaveEvent>(OnMouseLeave);
     }
 
     protected override void UnregisterCallbacksFromTarget()
     {
-        target.UnregisterCallback<MouseDownEvent>(OnMouseDown);
-        target.UnregisterCallback<MouseUpEvent>(OnMouseUp);
+        target.UnregisterCallback<MouseMoveEvent>(OnMouseMove);
+        target.UnregisterCallback<MouseLeaveEvent>(OnMouseLeave);
     }
 
-    private void OnMouseDown(MouseDownEvent mouseEvent)
+    private void OnMouseMove(MouseMoveEvent mouseEvent)
     {
-        Debug.Log(target.name + ": Click en Elemento");
-
         if (mouseEvent != null)
         {
             target.style.borderLeftWidth = 2;
@@ -41,10 +41,8 @@ public class Lab3Manipulator : MouseManipulator
         }
     }
 
-    private void OnMouseUp(MouseUpEvent mouseEvent)
+    private void OnMouseLeave(MouseLeaveEvent mouseEvent)
     {
-        Debug.Log(target.name + ": No click en Elemento");
-
         if (mouseEvent != null)
         {
             target.style.borderLeftWidth = 0;
