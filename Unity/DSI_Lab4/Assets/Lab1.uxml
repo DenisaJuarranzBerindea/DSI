@@ -1,8 +1,4 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
-    <ui:Template name="Char" src="project://database/Assets/Char.uxml?fileID=9197481963319205126&amp;guid=a74a009fe2054ac4f880cd880a846a09&amp;type=3#Char" />
-    <ui:Template name="Char1" src="project://database/Assets/Char1.uxml?fileID=9197481963319205126&amp;guid=e54ac7762761bb44da4dd2ce618a4f6d&amp;type=3#Char1" />
-    <ui:Template name="Char2" src="project://database/Assets/Char2.uxml?fileID=9197481963319205126&amp;guid=b54e9c2ac6335f041a528c51c3681987&amp;type=3#Char2" />
-    <ui:Template name="Char3" src="project://database/Assets/Char3.uxml?fileID=9197481963319205126&amp;guid=aa027a9da9c69914f968d280ef188f6b&amp;type=3#Char3" />
     <ui:Template name="Kart" src="project://database/Assets/Kart.uxml?fileID=9197481963319205126&amp;guid=ac60ec5784308254e854f8e5a928d9d7&amp;type=3#Kart" />
     <ui:Template name="Kart1" src="project://database/Assets/Kart1.uxml?fileID=9197481963319205126&amp;guid=860f6960b6f7eb14daad164d74976bec&amp;type=3#Kart1" />
     <ui:Template name="Kart2" src="project://database/Assets/Kart2.uxml?fileID=9197481963319205126&amp;guid=1c51eca8315fe2f40a55c5e9015b54c5&amp;type=3#Kart2" />
@@ -11,10 +7,78 @@
     <Style src="project://database/Assets/Footer.uss?fileID=7433441132597879392&amp;guid=68dfef02bd626b34baaf681cede35147&amp;type=3#Footer" />
     <ui:VisualElement name="Body" class="Body">
         <ui:VisualElement name="Characters" class="Selector">
-            <ui:Instance template="Char" name="Char" style="flex-grow: 1;" />
-            <ui:Instance template="Char1" name="Char1" style="flex-grow: 1;" />
-            <ui:Instance template="Char2" name="Char2" style="flex-grow: 1;" />
-            <ui:Instance template="Char3" name="Char3" style="flex-grow: 1;" />
+            <ui:VisualElement name="Char" style="flex-grow: 1;">
+                <Style src="project://database/Assets/Lab4.uss?fileID=7433441132597879392&amp;guid=7e5c4bf3cbcce3a498be55c547c2443a&amp;type=3#Lab4" />
+                <ui:VisualElement name="Char" class="Option">
+                    <ui:VisualElement name="Mario" class="OptionBg" style="background-color: rgba(255, 50, 50, 0.6);">
+                        <ui:VisualElement name="Icon" class="Icon" style="background-image: url(&apos;project://database/Assets/Sprites/Mario.png?fileID=2800000&amp;guid=6606e6fe713a7a24086d385c51943862&amp;type=3#Mario&apos;);" />
+                        <ui:VisualElement name="Info" class="Info">
+                            <ui:Label text="MARIO" display-tooltip-when-elided="true" name="NameMario" class="Name" style="color: rgb(255, 255, 255);" />
+                            <ui:VisualElement name="Stars" class="Stars">
+                                <ui:VisualElement name="Star" class="Star" style="background-image: url(&apos;project://database/Assets/Sprites/Star.png?fileID=2800000&amp;guid=615067cdf57253a47b8af256d77588b9&amp;type=3#Star&apos;);" />
+                                <ui:VisualElement name="Star" class="Star" style="background-image: url(&apos;project://database/Assets/Sprites/Star.png?fileID=2800000&amp;guid=615067cdf57253a47b8af256d77588b9&amp;type=3#Star&apos;);" />
+                                <ui:VisualElement name="Star" class="Star" style="background-image: url(&apos;project://database/Assets/Sprites/Star.png?fileID=2800000&amp;guid=615067cdf57253a47b8af256d77588b9&amp;type=3#Star&apos;);" />
+                                <ui:VisualElement name="Star" class="Star" style="background-image: url(&apos;project://database/Assets/Sprites/Star.png?fileID=2800000&amp;guid=615067cdf57253a47b8af256d77588b9&amp;type=3#Star&apos;);" />
+                                <ui:VisualElement name="Star" class="Star" style="background-image: url(&apos;project://database/Assets/Sprites/Star.png?fileID=2800000&amp;guid=615067cdf57253a47b8af256d77588b9&amp;type=3#Star&apos;);" />
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="Char1" style="flex-grow: 1;">
+                <Style src="project://database/Assets/Lab4.uss?fileID=7433441132597879392&amp;guid=7e5c4bf3cbcce3a498be55c547c2443a&amp;type=3#Lab4" />
+                <ui:VisualElement name="Char" class="Option">
+                    <ui:VisualElement name="Luigi" class="OptionBg" style="background-color: rgba(50, 255, 90, 0.6);">
+                        <ui:VisualElement name="Icon" class="Icon" style="background-image: url(&apos;project://database/Assets/Sprites/Luigi.png?fileID=2800000&amp;guid=6f4bcfd9d04ddbe4592782aa04264022&amp;type=3#Luigi&apos;);" />
+                        <ui:VisualElement name="Info" class="Info">
+                            <ui:Label text="LUIGI" display-tooltip-when-elided="true" name="NameLuigi" class="Name" style="color: rgb(255, 255, 255);" />
+                            <ui:VisualElement name="Stars" class="Stars">
+                                <ui:VisualElement name="Star" class="Star" style="background-image: url(&apos;project://database/Assets/Sprites/Star.png?fileID=2800000&amp;guid=615067cdf57253a47b8af256d77588b9&amp;type=3#Star&apos;);" />
+                                <ui:VisualElement name="Star" class="Star" style="background-image: url(&apos;project://database/Assets/Sprites/Star.png?fileID=2800000&amp;guid=615067cdf57253a47b8af256d77588b9&amp;type=3#Star&apos;);" />
+                                <ui:VisualElement name="Star" class="Star" style="background-image: url(&apos;project://database/Assets/Sprites/Star.png?fileID=2800000&amp;guid=615067cdf57253a47b8af256d77588b9&amp;type=3#Star&apos;);" />
+                                <ui:VisualElement name="Star" class="Star" style="background-image: url(&apos;project://database/Assets/Sprites/Star.png?fileID=2800000&amp;guid=615067cdf57253a47b8af256d77588b9&amp;type=3#Star&apos;);" />
+                                <ui:VisualElement name="Star" class="Star" style="background-image: url(&apos;project://database/Assets/Sprites/Star.png?fileID=2800000&amp;guid=615067cdf57253a47b8af256d77588b9&amp;type=3#Star&apos;);" />
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="Char2" style="flex-grow: 1;">
+                <Style src="project://database/Assets/Lab4.uss?fileID=7433441132597879392&amp;guid=7e5c4bf3cbcce3a498be55c547c2443a&amp;type=3#Lab4" />
+                <ui:VisualElement name="Char" class="Option">
+                    <ui:VisualElement name="Peach" class="OptionBg" style="background-color: rgba(255, 30, 150, 0.6);">
+                        <ui:VisualElement name="Icon" class="Icon" style="background-image: url(&apos;project://database/Assets/Sprites/Peach.png?fileID=2800000&amp;guid=4a4eb057a6b21d443922996c28640c23&amp;type=3#Peach&apos;);" />
+                        <ui:VisualElement name="Info" class="Info">
+                            <ui:Label text="PEACH" display-tooltip-when-elided="true" name="NamePeach" class="Name" style="-unity-font: none; color: rgb(255, 255, 255);" />
+                            <ui:VisualElement name="Stars" class="Stars">
+                                <ui:VisualElement name="Star" class="Star" style="background-image: url(&apos;project://database/Assets/Sprites/Star.png?fileID=2800000&amp;guid=615067cdf57253a47b8af256d77588b9&amp;type=3#Star&apos;);" />
+                                <ui:VisualElement name="Star" class="Star" style="background-image: url(&apos;project://database/Assets/Sprites/Star.png?fileID=2800000&amp;guid=615067cdf57253a47b8af256d77588b9&amp;type=3#Star&apos;);" />
+                                <ui:VisualElement name="Star" class="Star" style="background-image: url(&apos;project://database/Assets/Sprites/Star.png?fileID=2800000&amp;guid=615067cdf57253a47b8af256d77588b9&amp;type=3#Star&apos;);" />
+                                <ui:VisualElement name="Star" class="Star" style="background-image: url(&apos;project://database/Assets/Sprites/Star.png?fileID=2800000&amp;guid=615067cdf57253a47b8af256d77588b9&amp;type=3#Star&apos;);" />
+                                <ui:VisualElement name="Star" class="Star" style="background-image: url(&apos;project://database/Assets/Sprites/Star.png?fileID=2800000&amp;guid=615067cdf57253a47b8af256d77588b9&amp;type=3#Star&apos;);" />
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="Char3" style="flex-grow: 1;">
+                <Style src="project://database/Assets/Lab4.uss?fileID=7433441132597879392&amp;guid=7e5c4bf3cbcce3a498be55c547c2443a&amp;type=3#Lab4" />
+                <ui:VisualElement name="Char" class="Option">
+                    <ui:VisualElement name="Estela" class="OptionBg" style="background-color: rgba(50, 255, 235, 0.6);">
+                        <ui:VisualElement name="Icon" class="Icon" style="background-image: url(&apos;project://database/Assets/Sprites/Estela.png?fileID=2800000&amp;guid=0fb8db8113c410a4eaf620d0c71ebdb6&amp;type=3#Estela&apos;);" />
+                        <ui:VisualElement name="Info" class="Info">
+                            <ui:Label text="ESTELA" display-tooltip-when-elided="true" name="NameEstela" class="Name" style="color: rgb(255, 255, 255);" />
+                            <ui:VisualElement name="Stars" class="Stars">
+                                <ui:VisualElement name="Star" class="Star" style="background-image: url(&apos;project://database/Assets/Sprites/Star.png?fileID=2800000&amp;guid=615067cdf57253a47b8af256d77588b9&amp;type=3#Star&apos;);" />
+                                <ui:VisualElement name="Star" class="Star" style="background-image: url(&apos;project://database/Assets/Sprites/Star.png?fileID=2800000&amp;guid=615067cdf57253a47b8af256d77588b9&amp;type=3#Star&apos;);" />
+                                <ui:VisualElement name="Star" class="Star" style="background-image: url(&apos;project://database/Assets/Sprites/Star.png?fileID=2800000&amp;guid=615067cdf57253a47b8af256d77588b9&amp;type=3#Star&apos;);" />
+                                <ui:VisualElement name="Star" class="Star" style="background-image: url(&apos;project://database/Assets/Sprites/Star.png?fileID=2800000&amp;guid=615067cdf57253a47b8af256d77588b9&amp;type=3#Star&apos;);" />
+                                <ui:VisualElement name="Star" class="Star" style="background-image: url(&apos;project://database/Assets/Sprites/Star.png?fileID=2800000&amp;guid=615067cdf57253a47b8af256d77588b9&amp;type=3#Star&apos;);" />
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
         </ui:VisualElement>
         <ui:VisualElement name="Vehicles" class="Selector">
             <ui:Instance template="Kart" name="Kart" style="flex-grow: 1;" />
