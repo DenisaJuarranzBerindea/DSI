@@ -13,11 +13,13 @@ public class Lab3Manipulator : MouseManipulator
     protected override void RegisterCallbacksOnTarget()
     {
         target.RegisterCallback<MouseDownEvent>(OnMouseDown);
+        target.RegisterCallback<MouseUpEvent>(OnMouseUp);
     }
 
     protected override void UnregisterCallbacksFromTarget()
     {
         target.UnregisterCallback<MouseDownEvent>(OnMouseDown);
+        target.UnregisterCallback<MouseUpEvent>(OnMouseUp);
     }
 
     private void OnMouseDown(MouseDownEvent mouseEvent)
